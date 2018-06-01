@@ -1,0 +1,38 @@
+<html>
+<head><title>Simple Clue</title>
+<script src="lab4.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<p id="suspectCards"></p>
+	<p id="weaponCards"></p>
+	<p id="roomCards"></p>
+	<script type="text/javascript">listCards()</script>
+
+	<form id="nameForm">
+		<p id="name">
+			Name:
+			<input type="text" id="nameInput" value="Enter Name" autofocus="true">
+			<input type="button" value="Enter" onclick='startGame()'>
+		</p>
+	</form>
+	<form>
+		<label>Guess suspects:</label>
+		<select id="suspects" name="suspects"></select><br>
+		<label>Guess Weapon:</label>
+		<select id="weapons" name="weapons"></select><br>
+		<label>Guess Room:</label>
+		<select id="rooms" name="rooms"></select><br>
+		<input type="button" disabled="true" id="guess" value="Guess" onclick='makeGuess()'>
+		<input type="button" disabled="true" id="continue" value="Continue" onclick='cpuGuess()'>
+	</form>
+	<script type="text/javascript">fillChoiceBoxes()</script>
+	<form id="hisForm">
+		<input type="button" id="hisButton" value="Show History" onclick='showHistory()'>
+	</form>
+	<form id="recForm">
+		<input type="button" id="recButton" value="Show Record" onclick='showRecord()'>
+	</form>
+
+</body>
+</html>

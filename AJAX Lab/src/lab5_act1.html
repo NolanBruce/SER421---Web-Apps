@@ -1,0 +1,58 @@
+<html>
+	<head><title>Weather AJAX</title>
+		<script src="lab5_act1.js" type="text/javascript"></script>
+		<link rel="icon" href="data:,">
+		<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="error"></div>
+		<table id="table" style="width:100%">
+			<tr>
+				<th>City Name</th>
+		    	<th>Time Stamp</th> 
+		    	<th>Temperature in Celcius</th>
+		    	<th>Humidity in %</th> 
+		    	<th>Windspeed in mph</th> 
+		    	<th>Cloudiness in %</th> 
+		  	</tr>
+				<tr id="city1">
+					<td id="name1"></td>
+					<td id="time1"></td>
+					<td id="temp1"></td>
+					<td id="hum1"></td>
+					<td id="wind1"></td>
+					<td id="cloud1"></td>
+				</tr>
+				<tr id="city2">
+					<td id="name2"></td>
+					<td id="time2"></td>
+					<td id="temp2"></td>
+					<td id="hum2"></td>
+					<td id="wind2"></td>
+					<td id="cloud2"></td>
+				</tr>
+		</table>
+		<select id="option" onChange='updateOpt();'>
+			<option value="New York">New York</option>
+			<option value="Sugar Hill">Sugar Hill</option>
+			<option value="Sydney">Sydney</option>
+			<option value="New Delhi">New Delhi</option>
+			<option value="Shanghai">Shanghai</option>
+		</select>
+		<form>
+			<input type="button" value="Refresh" onclick='refresh();'>
+		</form>
+		<div id="compare1"></div>
+		<div id="compare2"></div>
+		<div id="compare3"></div>
+		<div id="compare4"></div>
+		<script>
+			initialize();
+		</script>
+	</body>
+</html>

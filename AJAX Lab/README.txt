@@ -1,0 +1,1 @@
+This lab essentially recreates the weather app from Activity 1 of the Express Lab as a SPA with AJAX.

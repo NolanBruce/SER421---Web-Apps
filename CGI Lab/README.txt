@@ -1,0 +1,1 @@
+A simple CGI-based faux news site that does little but show how unwieldy CGI can be.
